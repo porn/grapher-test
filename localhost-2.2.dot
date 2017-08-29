@@ -1,0 +1,28 @@
+digraph all {
+  rankdir=TB;
+
+  all [shape=record label=<
+<table border="0" cellborder="0">
+  <tr><td><b>
+  <font face="Times New Roman, Bold" point-size="16">all</font>
+  </b></td></tr>
+</table>
+>]
+  test [shape=record style=rounded label=<
+<table border="0" cellborder="0">
+  <tr><td><b>
+  <font face="Times New Roman, Bold" point-size="16">test</font>
+  </b></td></tr>
+</table>
+>]
+  test_group [shape=record label=<
+<table border="0" cellborder="0">
+  <tr><td><b>
+  <font face="Times New Roman, Bold" point-size="16">test-group</font>
+  </b></td></tr>
+</table>
+>]
+
+  all -> test_group;
+  test_group -> test;
+}
